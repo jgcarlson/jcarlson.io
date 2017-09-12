@@ -1,0 +1,58 @@
+html, body{
+  height: 100%;
+  font-family: "Montserrat", Times, serif;
+  color: white;
+}
+
+body {
+  background-image: url("../images/trees.jpeg") ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+h1 {
+  margin-top: 10vh;
+  font-weight: 900;
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.intro {
+  font-size: 1.5em;
+  text-align: center;
+  width: 60vw;
+  min-width: 350px;
+  margin: auto;
+}
+
+img {
+  margin-top: 3vh;
+  width: 10vw;
+  height: 10vw;
+  min-width: 50px;
+  border-radius: 100%;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  min-width: 350px;
+  margin: auto;
+}
+
+.footer > a {
+  margin-top: 5vh;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
