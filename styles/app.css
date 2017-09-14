@@ -4,14 +4,40 @@ html, body{
   color: white;
 }
 
+.page {
+  position: relative;
+  height: 100vh;
+}
+
+.arrow, .arrow:hover {
+  position: absolute;
+  bottom: 2vh;
+  color: #00BF7C;
+  text-decoration: none;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+}
+
 #landing {
   background-image: url("../images/airplane.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
   padding-top: 2vh;
+}
+
+#middle {
+
+}
+
+#leaving {
+  background-image: url("../images/stars.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {

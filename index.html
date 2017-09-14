@@ -5,16 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Jonathan Carlson | Full-Stack Web Developer</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/foundation.min.css">
     <link rel="stylesheet" href="styles/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Scripts -->
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -23,30 +22,39 @@
 
   <body>
 
-    <div id="landing">
+    <div id="landing" class="page">
       <div class="header">
-        <h1>Jonathan Carlson</h1>
+        <h1>Hi, my name is Jonathan.</h1>
       </div>
+      <a class="arrow" href="#middle"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
     </div>
 
+    <div id="middle" class="page">
 
+      <div class="intro">
+        <p>Hi! My name is Jonathan. I live in LA with my beautiful Irish wife.</p>
+        <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have experience
+          with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
+        <img src="images/pic.jpg" alt="pic">
+      </div>
 
-    <div class="intro">
-      <p>Hi! My name is Jonathan. I live in LA with my beautiful Irish wife.</p>
-      <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have experience
-        with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
-      <img src="images/pic.jpg" alt="pic">
+      <div class="footer">
+        <a href="#">Home</a>
+        <a href="#">Project</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+      </div>
+
+      <a class="arrow" href="#leaving"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+
     </div>
 
+    <div id="leaving" class="page">
 
-    <div class="footer">
-      <a href="#">Home</a>
-      <a href="#">Project</a>
-      <a href="#">Skills</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
+      <a class="arrow" href="#landing"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+
     </div>
-
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
