@@ -47,21 +47,20 @@ h1 {
 
 .header {
   text-align: center;
-  font-size: 2em;
-}
-
-.intro {
-  font-size: 1.5em;
-  text-align: center;
-  width: 60vw;
+  width: 80vw;
   min-width: 350px;
   margin: auto;
+  font-size: 1.3em;
+}
+
+#hello {
+  text-align: center;
 }
 
 img {
   margin-top: 3vh;
-  width: 10vw;
-  height: 10vw;
+  width: 20vw;
+  height: 20vw;
   min-width: 50px;
   border-radius: 100%;
   background-size: cover;
