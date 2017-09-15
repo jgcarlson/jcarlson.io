@@ -17,6 +17,16 @@ html, body{
   left: 50%;
   transform: translateX(-50%);
   font-size: 3em;
+  text-align: center;
+}
+
+#indicator {
+  font-size: .4em;
+  margin-bottom: 0;
+}
+
+a[href="#middle"] {
+  color: inherit;
 }
 
 #landing {
@@ -65,7 +75,7 @@ h1 {
   display: none;
 }
 
-img {
+#face {
   margin-top: 3vh;
   width: 10vw;
   height: 10vw;
@@ -76,7 +86,9 @@ img {
 }
 
 #middle {
-
+  padding-top: 3vh;
+  color: black;
+  text-align: center;
 }
 
 
@@ -88,7 +100,7 @@ img {
 
 .form-container {
   width: 80vw;
-    margin: auto;
+  margin: auto;
 
 }
 
