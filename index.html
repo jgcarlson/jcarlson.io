@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Jonathan Carlson | Full-Stack Web Developer</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles/foundation.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Scripts -->
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -22,26 +23,89 @@
 
   <body>
 
-    <div class="header">
-      <h1>Jonathan Carlson</h1>
+  <div id="landing" class="page">
+
+    <h1 id="hello"></h1>
+    <h3 id="test"></h3>
+
+    <div class="header media-object">
+      <div class="media-object-section">
+        <img id="face" src="images/pic.jpg" alt="pic">
+      </div>
+      <div class="media-object-section intro-content">
+        <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have
+          experience with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
+      </div>
     </div>
 
-    <div class="intro">
-      <p>Hi! My name is Jonathan. I live in LA with my beautiful Irish wife.</p>
-      <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have experience
-        with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
-      <img src="images/pic.jpg" alt="pic">
+    <div class="arrow">
+      <p id="indicator">Check out my projects.</p>
+      <a href="#middle"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
     </div>
 
-    <div class="footer">
-      <a href="#">Home</a>
-      <a href="#">Project</a>
-      <a href="#">Skills</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
+  </div>
+
+    <div id="middle" class="page">
+
+      <h2>Twap-It!</h2>
+      <h4>When Twitter and Google Maps make a baby.</h4>
+
+      <div class="grid-x grid-margin-x">
+        <div class="small-1 cell"></div>
+        <div class="medium-6 cell">
+          <img id="twapitgif" src="images/twapit.gif" alt="Twap-It Gif">
+        </div>
+        <div class="medium-4 cell techs">
+          <div class="card">
+            <div class="card-divider">
+              <h5>Technologies used:</h5>
+            </div>
+            <div class="card-section">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="HTML5" src="images/html5.png" alt="html5">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="CSS3" src="images/css3.png" alt="css3">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="JavaScript" src="images/javascript.png" alt="javascript">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="jQuery" src="images/jquery.png" alt="jquery">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Java" src="images/java.png" alt="java">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring" src="images/spring.png" alt="spring">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Tool Suite" src="images/springtoolsuite.png" alt="springtoolsuite">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Boot" src="images/springboot.png" alt="springboot">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Security" src="images/springsecurity.png" alt="springsecurity">
+            </div>
+          </div>
+
+        </div>
+        <div class="small-1 cell"></div>
+        <a class="arrow" href="#leaving"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+      </div>
+
+    </div>
+
+    <div id="leaving" class="page">
+
+      <div class="form-container">
+        <h1>Let's talk.</h1>
+        <h3>Whether you're interested in my services for your project, think we might make a good team, or just have a question, I would love to hear from you.</h3>
+        <form>
+          <input type="text" class="large" placeholder="Your Email Address">
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit" class="primary button expanded">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </form>
+      </div>
+
+      <div class="arrow">
+        <p id="indicator">Back to top.</p>
+        <a href="#landing"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+      </div>
+
     </div>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/typed.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+
   </body>
 
 </html>
