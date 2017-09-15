@@ -12,7 +12,7 @@ html, body{
 .arrow, .arrow:hover {
   position: absolute;
   bottom: 2vh;
-  color: #00BF7C;
+  color: lightblue;
   text-decoration: none;
   left: 50%;
   transform: translateX(-50%);
@@ -28,10 +28,6 @@ html, body{
   padding-top: 2vh;
 }
 
-#middle {
-
-}
-
 #leaving {
   background-image: url("../images/stars.jpeg");
   background-position: center center;
@@ -43,39 +39,63 @@ html, body{
 h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
+  margin-top: 6vh;
 }
 
 .header {
-  text-align: center;
+  margin: auto;
+  margin-top: 6vh;
+  text-align: justify;
   width: 80vw;
   min-width: 350px;
-  margin: auto;
   font-size: 1.3em;
+}
+
+.intro-content {
+  padding: 2vh;
 }
 
 #hello {
   text-align: center;
+  text-overflow: clip;
+  height: 10vh;
+}
+
+.typed-cursor {
+  display: none;
 }
 
 img {
   margin-top: 3vh;
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   min-width: 50px;
   border-radius: 100%;
   background-size: cover;
   border: 2px solid black;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 60vw;
-  min-width: 350px;
-  margin: auto;
+#middle {
+
 }
 
-.footer > a {
-  margin-top: 5vh;
-  font-size: 1.3em;
+
+#leaving {
+  text-align: center;
+  min-width: 350px;
+  padding-top: 8vh;
+}
+
+.form-container {
+  width: 80vw;
+    margin: auto;
+
+}
+
+.form-container > form {
+  margin: 5vh auto;
+}
+
+i {
+  opacity: .6;
 }

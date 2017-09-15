@@ -1,10 +1,12 @@
-$(document).ready(function() {
-
+var typed = new Typed("#hello", {
+  strings: ["Hello. ^1000 My name is Jonathan."],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 500,
+  startDelay: 1000,
+  loop: false,
+  loopCount: false,
 });
-
-
-
-
 
 $(document).foundation();
 
@@ -27,18 +29,3 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
-
-// Vanilla Typing
-var sentence = "Hello. My name is Jonathan.";
-var element = document.getElementById('hello');
-var counter = 0;
-
-function type() {
-  element.innerHTML = element.innerHTML + sentence[counter];
-  counter++;
-  if (counter == sentence.length) {
-    clearInterval(interval);
-  }
-}
-
-var interval = setInterval(type, 100);
