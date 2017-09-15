@@ -23,24 +23,27 @@
 
   <body>
 
-    <div id="landing" class="page">
-      <h1 id="hello"></h1>
-      <h3 id="test"></h3>
-      <div class="header media-object">
-        <div class="media-object-section">
-          <img id="face" src="images/pic.jpg" alt="pic">
-        </div>
-        <div class="media-object-section intro-content">
-          <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have
-            experience with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
-        </div>
+  <div id="landing" class="page">
+
+    <h1 id="hello"></h1>
+    <h3 id="test"></h3>
+
+    <div class="header media-object">
+      <div class="media-object-section">
+        <img id="face" src="images/pic.jpg" alt="pic">
+      </div>
+      <div class="media-object-section intro-content">
+        <p>I'm a freelance Full-Stack Web Developer with a diverse set of skills: Along with basic HTML + CSS + JavaScript, I love to design with Python (using Django), MEAN (also learning React, does that make it MERN?), and Java using Spring. I have
+          experience with SQL and NoSQL databases. I'm always eager to learn new things and improve my skills.</p>
       </div>
     </div>
+
     <div class="arrow">
       <p id="indicator">Check out my projects.</p>
       <a href="#middle"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
     </div>
-    </div>
+
+  </div>
 
     <div id="middle" class="page">
 
@@ -48,26 +51,32 @@
       <h4>When Twitter and Google Maps make a baby.</h4>
 
       <div class="grid-x grid-margin-x">
-        <div class="small-2 cell"></div>
-        <div class="medium-5 cell">
-          <img src="images/twapit.gif" alt="Twap-It Gif">
+        <div class="small-1 cell"></div>
+        <div class="medium-6 cell">
+          <img id="twapitgif" src="images/twapit.gif" alt="Twap-It Gif">
         </div>
-        <div class="medium-5 cell">
-          <h5>Technologies used:</h5>
-          <p></p>
-        </div>
-        <div class="small-2 cell"></div>
+        <div class="medium-4 cell techs">
+          <div class="card">
+            <div class="card-divider">
+              <h5>Technologies used:</h5>
+            </div>
+            <div class="card-section">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="HTML5" src="images/html5.png" alt="html5">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="CSS3" src="images/css3.png" alt="css3">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="JavaScript" src="images/javascript.png" alt="javascript">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="jQuery" src="images/jquery.png" alt="jquery">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Java" src="images/java.png" alt="java">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring" src="images/spring.png" alt="spring">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Tool Suite" src="images/springtoolsuite.png" alt="springtoolsuite">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Boot" src="images/springboot.png" alt="springboot">
+              <img data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Spring Security" src="images/springsecurity.png" alt="springsecurity">
+            </div>
+          </div>
 
         </div>
+        <div class="small-1 cell"></div>
+        <a class="arrow" href="#leaving"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
       </div>
-
-
-
-
-
-
-
-      <a class="arrow" href="#leaving"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
 
     </div>
 
@@ -83,7 +92,10 @@
         </form>
       </div>
 
-      <a class="arrow" href="#landing"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+      <div class="arrow">
+        <p id="indicator">Back to top.</p>
+        <a href="#landing"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+      </div>
 
     </div>
 

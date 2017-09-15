@@ -30,7 +30,7 @@ a[href="#middle"] {
 }
 
 #landing {
-  background-image: url("../images/airplane.jpeg");
+  background-image: url("../images/background.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -91,6 +91,24 @@ h1 {
   text-align: center;
 }
 
+#twapitgif {
+  border: 2px solid black;
+}
+
+.techs {
+  text-align: left;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.has-tip {
+  border-bottom: none;
+  width: 5vw;
+  min-width: 30px;
+  margin: 1vh 1vw;
+}
 
 #leaving {
   text-align: center;
