@@ -20,9 +20,10 @@ html, body{
   text-align: center;
 }
 
-#indicator {
+.indicator {
   font-size: .4em;
   margin-bottom: 0;
+  color: lightblue;
 }
 
 a[href="#middle"] {
@@ -128,4 +129,10 @@ h5 {
 
 i {
   opacity: .6;
+}
+
+footer {
+  padding: 2vh 2vw;
+  text-align: center;
+  color: black;
 }
