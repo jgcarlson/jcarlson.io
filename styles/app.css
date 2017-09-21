@@ -4,9 +4,23 @@ html, body{
   color: white;
 }
 
+/* --- GENERAL --- */
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-top: 6vh;
+}
+
+h5 {
+  font-weight: 700;
+}
+
 .page {
   position: relative;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .arrow, .arrow:hover {
@@ -26,31 +40,38 @@ html, body{
   color: lightblue;
 }
 
-a[href="#middle"] {
-  color: inherit;
+i {
+  opacity: .6;
 }
 
-#landing {
+.card-divider {
+  padding: 1vh 1vw;
+}
+
+.has-tip {
+  border-bottom: none;
+  width: 5vw;
+  min-width: 30px;
+  margin: 1vh 1vw;
+}
+
+.techs {
+  text-align: left;
+}
+
+.left {
+  text-align: left;
+}
+
+/* --- LANDING --- */
+
+#landing-page {
   background-image: url("../images/background.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding-top: 2vh;
-}
-
-#leaving {
-  background-image: url("../images/stars.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  margin-top: 6vh;
 }
 
 .header {
@@ -86,32 +107,37 @@ h1 {
   border: 2px solid black;
 }
 
-#middle {
+/* --- TWAP-IT --- */
+
+#twap-it-page {
   padding-top: 3vh;
   color: black;
   text-align: center;
 }
 
-#twapitgif {
-  border: 2px solid black;
+a[href="#twap-it-page"] {
+  color: inherit;
 }
 
-.techs {
-  text-align: left;
+#twap-it-gif {
+  border: 1px solid black;
 }
 
-h5 {
-  font-weight: 700;
+/* --- FAIR-BNB --- */
+
+#fair-bnb-page {
+  color: black;
+  border-top: 1px solid black;
 }
 
-.has-tip {
-  border-bottom: none;
-  width: 5vw;
-  min-width: 30px;
-  margin: 1vh 1vw;
-}
+/* --- CONTACT --- */
 
-#leaving {
+#contact-page {
+  background-image: url("../images/stars.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
   min-width: 350px;
   padding-top: 8vh;
@@ -120,16 +146,13 @@ h5 {
 .form-container {
   width: 80vw;
   margin: auto;
-
 }
 
 .form-container > form {
   margin: 5vh auto;
 }
 
-i {
-  opacity: .6;
-}
+/* --- FOOTER --- */
 
 footer {
   padding: 2vh 2vw;
