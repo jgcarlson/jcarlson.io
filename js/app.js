@@ -1,5 +1,7 @@
+$(document).foundation();
+
 var typed = new Typed("#hello", {
-  strings: ["Hello. ^1000 My name is Jonathan."],
+  strings: ["Hello. ^800 My name is Jonathan."],
   typeSpeed: 60,
   backSpeed: 30,
   backDelay: 500,
@@ -7,8 +9,6 @@ var typed = new Typed("#hello", {
   loop: false,
   loopCount: false,
 });
-
-$(document).foundation();
 
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
@@ -29,3 +29,6 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
+
+fitty('#intro-content');
+fitty('.fit');

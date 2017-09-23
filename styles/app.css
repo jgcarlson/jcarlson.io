@@ -74,16 +74,16 @@ i {
   padding-top: 2vh;
 }
 
-.header {
+#header {
   margin: auto;
   margin-top: 6vh;
   text-align: justify;
-  width: 80vw;
+  width: 60vw;
   min-width: 350px;
   font-size: 1.3em;
 }
 
-.intro-content {
+#intro-content {
   padding: 2vh;
 }
 
@@ -103,6 +103,7 @@ i {
   width: 10vw;
   height: 10vw;
   min-width: 50px;
+  min-height: 50px;
   border-radius: 100%;
   background-size: cover;
   border: 2px solid black;
