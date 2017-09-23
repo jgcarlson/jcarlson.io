@@ -60,13 +60,10 @@ i {
 
 .has-tip {
   border-bottom: none;
-  width: 5vw;
-  min-width: 30px;
-  margin: 1vh 1vw;
 }
 
-.techs {
-  text-align: left;
+.cell {
+  padding: .5vw .5vh;
 }
 
 .left {
@@ -133,6 +130,8 @@ a[href="#twap-it-page"] {
 
 #twap-it-gif {
   border: 1px solid black;
+  height: auto;
+  margin-bottom: 3vh;
 }
 
 /* --- FAIR-BNB --- */
