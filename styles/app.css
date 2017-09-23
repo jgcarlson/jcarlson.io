@@ -163,6 +163,10 @@ a[href="#twap-it-page"] {
   margin: 5vh auto;
 }
 
+#honeypot {
+  display: none;
+}
+
 /* --- FOOTER --- */
 
 footer {
