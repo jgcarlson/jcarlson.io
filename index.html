@@ -131,9 +131,13 @@
       <div class="form-container">
         <h1>Let's talk.</h1>
         <h3>Whether you're interested in my services for your project, think we might make a good team, or just have a question, I would love to hear from you.</h3>
-        <form>
-          <input type="text" class="large" placeholder="Your Email Address">
-          <textarea placeholder="Your Message"></textarea>
+        <div style="display:none;" id="thankyou_message">
+          <h1>Thanks for the message! I'll be sure to get back to you soon.</h1>
+        </div>
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxB2ryzxWzXfFfLXntESftWvAoNLePRyQbi02gbiclp54L3YGXq/exec">
+          <input type="text" class="large" name="name" placeholder="Your name.">
+          <input type="text" class="large" name="email" placeholder="Your email address.">
+          <textarea name="message" maxlength="999" placeholder="Your message."></textarea>
           <button type="submit" class="primary button expanded">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
       </div>
@@ -155,6 +159,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/fitty.min.js"></script>
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
     <script src="js/app.js"></script>
 
   </body>
