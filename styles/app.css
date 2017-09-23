@@ -24,6 +24,14 @@ h5 {
   overflow: hidden;
 }
 
+@media (max-width: 600px) {
+  .page {
+    padding: 10vh 10vw;
+    height: auto;
+    padding-bottom: 120px;
+  }
+}
+
 .page-header {
   display: inline-flex;
   align-items: baseline;
@@ -48,6 +56,7 @@ h5 {
   font-size: .4em;
   margin-bottom: 0;
   color: lightblue;
+  min-width: 300px;
 }
 
 i {
@@ -90,8 +99,11 @@ i {
   font-size: 1.3em;
 }
 
+
+
 #intro-content {
   padding: 2vh;
+  min-width: 280px;
 }
 
 #hello {
@@ -114,6 +126,16 @@ i {
   border-radius: 100%;
   background-size: cover;
   border: 2px solid black;
+}
+
+@media (max-width: 600px) and (min-width: 350px) {
+  #hello {
+    height: 5vh;
+    min-width: 310px;
+  }
+  #header {
+    margin-top: 0;
+  }
 }
 
 /* --- TWAP-IT --- */
@@ -151,7 +173,7 @@ a[href="#twap-it-page"] {
   background-size: cover;
   text-align: center;
   min-width: 350px;
-  padding-top: 8vh;
+  padding-top: 2vh;
 }
 
 .form-container {
