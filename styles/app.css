@@ -1,19 +1,23 @@
+
+
 html, body{
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* --- GENERAL --- */
 
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   margin-top: 6vh;
 }
 
 h5 {
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -61,6 +65,7 @@ h5 {
 
 i {
   opacity: .6;
+  color: lightblue;
 }
 
 .card-divider {
@@ -102,6 +107,7 @@ i {
 #intro-content {
   padding: 2vh;
   min-width: 280px;
+  max-width: 100%;
 }
 
 #hello {
@@ -189,7 +195,13 @@ a[href="#twap-it-page"] {
 /* --- FOOTER --- */
 
 footer {
-  padding: 2vh 2vw;
-  text-align: center;
+  color: black;
+}
+
+details {
+  padding: 1vh 1vw;
+}
+
+.icon > i {
   color: black;
 }
