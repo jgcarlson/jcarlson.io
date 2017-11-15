@@ -1,9 +1,9 @@
-
-
-html, body{
+html,
+body {
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
+  /*overflow-x: hidden;*/
 }
 
 body {
@@ -28,14 +28,6 @@ h5 {
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 10vh 10vw;
-    height: auto;
-    padding-bottom: 120px;
-  }
-}
-
 .page-header {
   display: inline-flex;
   align-items: baseline;
@@ -45,7 +37,8 @@ h5 {
   margin-right: 1vw;
 }
 
-.arrow, .arrow:hover {
+.arrow,
+.arrow:hover {
   position: absolute;
   bottom: 2vh;
   color: lightblue;
@@ -57,14 +50,14 @@ h5 {
 }
 
 .indicator {
-  font-size: .4em;
+  font-size: 0.4em;
   margin-bottom: 0;
   color: lightblue;
   min-width: 300px;
 }
 
 i {
-  opacity: .6;
+  opacity: 0.6;
   color: lightblue;
 }
 
@@ -77,7 +70,7 @@ i {
 }
 
 .cell {
-  padding: .5vw .5vh;
+  padding: 0.5vw 0.5vh;
 }
 
 .left {
@@ -87,7 +80,7 @@ i {
 /* --- LANDING --- */
 
 #landing-page {
-  background-image: url("../images/background.gif");
+  background-image: url('../images/background.gif');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -121,7 +114,7 @@ i {
 }
 
 #face {
-  background-image: url("../images/picture.jpg");
+  background-image: url('../images/picture.jpg');
   margin-top: 3vh;
   width: 10vw;
   height: 10vw;
@@ -150,7 +143,7 @@ i {
   text-align: center;
 }
 
-a[href="#twap-it-page"] {
+a[href='#twap-it-page'] {
   color: inherit;
 }
 
@@ -169,14 +162,15 @@ a[href="#twap-it-page"] {
 /* --- CONTACT --- */
 
 #contact-page {
-  background-image: url("../images/stars.jpeg");
+  background-image: url('../images/stars.jpeg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  min-width: 350px;
+  max-width: 100%;
   padding-top: 2vh;
+  margin-right: -10px;
 }
 
 .form-container {
@@ -196,6 +190,11 @@ a[href="#twap-it-page"] {
 
 footer {
   color: black;
+  text-align: center;
+}
+
+footer .grid-margin-x {
+  margin-right: auto;
 }
 
 details {
@@ -204,4 +203,95 @@ details {
 
 .icon > i {
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    padding: 10vh 10vw;
+    height: auto;
+    padding-bottom: 120px;
+  }
+}
+
+/* --- TEST --- */
+
+.content-section {
+  margin-top: 5vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.content-section .content-section-img-container {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+
+.content-section .content-section-img-container img {
+  width: 100%;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 600px) {
+  .content-section {
+    padding-top: 10vh;
+    width: 80vw;
+    max-width: 960px;
+    margin: auto;
+  }
+  .content-section .content-section-img-container {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+  }
+  .content-section .content-section-img-container {
+    max-width: 300px;
+  }
+  .content-section .content-section-text-container p {
+    font-size: 1.2rem;
+  }
+}
+
+.content-section .content-section-text-container {
+  padding: 1rem;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.content-section .content-section-text-container p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 600px) {
+  .content-section .content-section-text-container {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    padding: 2rem;
+  }
 }
